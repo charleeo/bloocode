@@ -25,7 +25,7 @@ class AdminController extends Controller
     }
     public function adminDashboard()
     {
-        return $this->adminService ->adminDashboard();
+        return $this->adminService->adminDashboard();
     }
     public function assignRole(AssignRoleToEmployeeRequest $request)
     {

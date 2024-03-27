@@ -28,7 +28,6 @@ Route::group(["prefix"=> "employees"], function () {
 Route::group(["prefix"=> "roles"], function () {
     Route::post("create", [AdminController::class,'createRole']);
     Route::patch("update/{id}", [AdminController::class,'updateEmployeeStatus']);
-    Route::patch("update/{id}", [AdminController::class,'updateEmployeeStatus']);
     Route::post("assign", [AdminController::class,'assignRole']);
 });
 Route::group(["prefix"=> "admin"], function () {
